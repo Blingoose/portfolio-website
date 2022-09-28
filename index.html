@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ecdf798431.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Open+Sans:wght@300;800&family=Sora:wght@100;200;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/normalize.css".css">
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <input type="checkbox" class="toggle" />
+        <div class="hamburger-box">
+          <div class="icon"></div>
+        </div>
+        <div class="menu">
+          <div class="menu-square">
+            <div class="menu-subjects">
+              <ul>
+                <li><a class="home btn" href="#home">Home</a></li>
+                <li><a class="work btn" href="#work">My Work</a></li>
+                <li><a class="sign-up btn" href="#sign-up">Sign-up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--* Page 1 -->
+    <section id="home" class="page">
+      <div class="home-header">
+        <div class="home-upper-container">
+          <h1>
+            <span class="before-my-name">My name is</span> <span>A</span>ndre
+            <span>K</span>atov
+          </h1>
+          <div class="home-row">
+            <span
+              ><img
+                class="my-face"
+                src="../img/my_face.png"
+                alt="my face image"
+            /></span>
+            <p>
+              A multidisciplinary developer and designer (sometimes) with a
+              passion for creating engaging, entertaining user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="home-bottom">
+        <h3>Why Do You Need Me?</h3>
+        <p>
+          I work on builds and maintenance for a variety of client sites, giving
+          them a design-focused revamp and adding some custom features and
+          functionality to make them shine! I've always been drawn to both the
+          creative and analytical side of development. That's my speciality and
+          what I do best. Try me!
+        </p>
+      </section>
+    </section>
+    <!--! Page 2 -->
+    <section id="work" class="page">
+      <div class="grid-container">
+        <div id="grid">
+          <div class="item1" id="box"></div>
+          <div class="item2" id="box"></div>
+          <div class="item3" id="box"></div>
+          <div class="item4" id="box">
+            <h2>Some of my portfolio work during the recent years.</h2>
+          </div>
+          <div class="item5" id="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              officia odit sit voluptatem excepturi commodi.
+            </p>
+          </div>
+          <div class="item6" id="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              aliquid distinctio eaque sequi nostrum itaque.
+            </p>
+          </div>
+          <div class="item7" id="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestias dicta iste autem?
+            </p>
+          </div>
+          <!-- <div class="item4" id="box">4</div>
+            <div class="item5" id="box">5</div> -->
+        </div>
+      </div>
+    </section>
+    <!--! Page 3-->
+    <section id="sign-up" class="page">
+      <div id="container">
+        <div class="form-wrap">
+          <h1>Sign Up</h1>
+          <p>It's free and only takes a minute</p>
+          <form>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="firstName" id="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="lastName" id="last-name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-group">
+              <label for="password2">Confirm Password</label>
+              <input type="password" name="pasword2" id="password2" />
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <p class="bottom-text">
+              By clicking the Sign Up button, you agree to our
+              <a class="form-a" href="#">Terms & Conditions</a> and
+              <a class="form-a" href="#">Privacy Policy</a>
+            </p>
+            <p class="login-already">
+              Already have an account?
+              <a class="login-here" href="#">Login Here</a>
+            </p>
+          </form>
+        </div>
+        <footer>
+          <p class="footer-card">
+            <a
+              href="https://github.com/Blingoose"
+              target="_blank"
+              class="footer"
+              >GitHub <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="footer">
+              Linkedin <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/and.ktv"
+              target="_blank"
+              class="footer"
+            >
+              Facebook <i class="fa-brands fa-facebook"></i>
+            </a>
+          </p>
+        </footer>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Smooth Scrolling
+      $(".btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
